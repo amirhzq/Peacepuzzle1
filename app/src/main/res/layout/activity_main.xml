@@ -24,6 +24,7 @@
         >
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/puzzleCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_row="0"
@@ -58,6 +59,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/exerciseCard"
             android:layout_height="0dp"
             android:layout_width="0dp"
             android:layout_rowWeight="1"
@@ -91,6 +93,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id = "@+id/theTreeCard"
             android:layout_height="0dp"
             android:layout_width="0dp"
             android:layout_rowWeight="1"
@@ -124,6 +127,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/meditationTimerCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
