@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Peacepuzzle1"
         tools:targetApi="31">
         <activity
+            android:name=".MeditationTimer"
+            android:exported="false" />
+        <activity
+            android:name=".CrsWrdActivityR2"
+            android:exported="false" />
+        <activity
+            android:name=".CrsWrdActivity"
+            android:exported="false" />
+        <activity
             android:name=".theTree"
             android:exported="false" />
         <activity

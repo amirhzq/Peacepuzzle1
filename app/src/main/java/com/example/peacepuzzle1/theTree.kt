@@ -17,10 +17,8 @@ class theTree : AppCompatActivity() {
 
         sendTreeButton.setOnClickListener {
             val message=messageInput.text.toString()
-//            val toast = Toast.makeText(this,message,Toast.LENGTH_SHORT)
-//            toast.setGravity(Gravity.CENTER,-200,0)
-//            toast.show()
-            Toast.makeText(this,message,Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"The tree has listened",Toast.LENGTH_SHORT).show()
+            messageInput.text.clear()
         }
     }
 }

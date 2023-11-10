@@ -14,13 +14,23 @@ class MainActivity : AppCompatActivity() {
     public fun clickListener(){
         var exerciseCard = findViewById<androidx.cardview.widget.CardView>(R.id.exerciseCard);
         var treeCard = findViewById<androidx.cardview.widget.CardView>(R.id.theTreeCard)
+        var crosswordCard = findViewById<androidx.cardview.widget.CardView>(R.id.puzzleCard)
+        var meditationCard = findViewById<androidx.cardview.widget.CardView>(R.id.meditationTimerCard)
 
         exerciseCard.setOnClickListener()
         {
             openExerciseTimerActivity()
         }
-        treeCard.setOnClickListener(){
+        treeCard.setOnClickListener()
+        {
             opentheTreeActivity()
+        }
+        crosswordCard.setOnClickListener()
+        {
+            openPuzzleActivity()
+        }
+        meditationCard.setOnClickListener(){
+            openMeditationTimerActivity()
         }
     }
 
@@ -33,4 +43,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this@MainActivity, theTree::class.java))
     }
 
+    public fun openPuzzleActivity(){
+        startActivity(Intent(this@MainActivity,CrsWrdActivity::class.java))
+    }
+
+    public fun openMeditationTimerActivity(){
+        startActivity((Intent(this@MainActivity,MeditationTimer::class.java)))
+    }
 }
